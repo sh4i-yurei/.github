@@ -21,9 +21,9 @@ in production; the only code is the CI that validates the files.
 
 ## Rules
 
-- **This repository is public.** It never names a private repository, a machine, or any other
-  piece of the estate. Labels, board mappings and anything else that would are kept privately in
-  `claude-config`.
+- **This repository is public.** It never names a private repository, a host, or any other
+  piece of the estate. Labels, board mappings and anything else that would are kept in private
+  configuration.
 - **Every file is worded for any kind of repository:** a website, a service, infrastructure code,
   tooling or a game.
 - **Call the authoritative tool.** Forms are validated against GitHub's schemas through

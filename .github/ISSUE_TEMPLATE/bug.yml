@@ -1,0 +1,33 @@
+name: Bug
+description: Report something that does not work as expected
+labels: ["type:fix"]
+body:
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: Describe the problem and paste the real error or output when available.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What I expected
+      description: Describe the result you expected.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Give the steps in order, starting from a known state.
+  - type: textarea
+    id: where
+    attributes:
+      label: Where
+      description: Name the project or environment where you saw it and the commit you used, if applicable.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Give a check someone else can run to confirm the fix.
+    validations:
+      required: true
