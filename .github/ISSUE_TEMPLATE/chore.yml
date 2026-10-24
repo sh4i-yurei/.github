@@ -1,0 +1,21 @@
+name: Chore
+description: Plan maintenance or internal work
+labels: ["type:chore"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Project, step, and reason
+      description: Name the project and step this belongs to, and explain why it is needed.
+  - type: textarea
+    id: changes
+    attributes:
+      label: What changes
+      description: Describe the work and its visible result.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Give a check someone else can run to confirm the result.
+    validations:
+      required: true

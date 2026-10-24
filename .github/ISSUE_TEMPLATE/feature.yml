@@ -1,0 +1,21 @@
+name: Feature
+description: Propose a new capability
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Project, step, and reason
+      description: Name the project and step this belongs to, and explain why it is needed.
+  - type: textarea
+    id: changes
+    attributes:
+      label: What changes
+      description: Describe the behavior or result this adds.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Give a check someone else can run to confirm the result.
+    validations:
+      required: true
