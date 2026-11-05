@@ -122,10 +122,10 @@ class DefaultTemplatesTest(unittest.TestCase):
         self.assertIn("private repository", readme)
         self.assertIn("estate", readme)
 
-    def test_ci_checks_branches_and_pull_requests(self):
+    def test_ci_checks_pushes_on_every_branch_only(self):
         workflow = read_yaml(ROOT / ".github" / "workflows" / "validate.yml")
         self.assertIn("push", workflow["on"])
-        self.assertIn("pull_request", workflow["on"])
+        self.assertNotIn("pull_request", workflow["on"])
         if isinstance(workflow["on"], dict):
             self.assertNotIn("branches", workflow["on"].get("push") or {})
 
