@@ -1,6 +1,6 @@
 name: Validate community files
 
-on: [push, pull_request]
+on: push
 
 jobs:
   validate:
